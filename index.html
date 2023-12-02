@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawsitive Paws</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">Pawsitive Paws</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">About</a></li>
+            <li><a href="#" class="nav_link">Service</a></li>
+            <li><a href="#" class="nav_link">Project</a></li>
+            <li><a href="#" class="nav_link">Contact</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2> Pawsitive Paws<br></h2>
+            <p>At Pawsitive Paws,We believe in a world in which each cat’s life experience will be as good as it can be. We do this by providing cat owners, veterinary professionals and those that live and work with cats with the resources, support and advice they need to care better for their cats.
+
+              <br>The International Society of Feline Medicine is the veterinary division of Pawsitive Paws and provides a worldwide resource for veterinarians on feline medicine and surgery.
+              
+              </p>
+            <div class="buttons">
+              <button class="btn">Find out More</button>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="cat.jpg" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <!--<img src="cat.jpg" alt="" class="curveImg" />-->
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
